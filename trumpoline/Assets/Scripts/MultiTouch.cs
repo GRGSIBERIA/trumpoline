@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MultiTouch : MonoBehaviour {
-    
-    
+public class MultiTouch : MonoBehaviour
+{
 	// Use this for initialization
 	void Start () {
         

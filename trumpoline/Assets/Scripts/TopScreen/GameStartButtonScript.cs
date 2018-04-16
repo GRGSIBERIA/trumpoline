@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TransitionButtonScript : MonoBehaviour
+public class GameStartButtonScript : MonoBehaviour
 {
-    public string nextScene;
-
     // Use this for initialization
     void Start()
     {
@@ -16,9 +14,11 @@ public class TransitionButtonScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (MultiTouch.IsTouch(gameObject))
-        {
-            SceneManager.LoadScene(nextScene);
-        }
+
+    }
+
+    public void OnClick()
+    {
+        SceneManager.LoadScene("GameScreen");
     }
 }

@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 439025249}
   - component: {fileID: 439025248}
   - component: {fileID: 439025247}
+  - component: {fileID: 439025250}
   m_Layer: 5
   m_Name: Option Button
   m_TagString: Untagged
@@ -224,6 +225,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 439025245}
+--- !u!114 &439025250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 439025245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8b0a88c1809fc842a24810dc173b99c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextScene: OptionScreen
 --- !u!1 &595447912
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,6 +248,7 @@ GameObject:
   - component: {fileID: 595447916}
   - component: {fileID: 595447915}
   - component: {fileID: 595447914}
+  - component: {fileID: 595447917}
   m_Layer: 5
   m_Name: Start Button
   m_TagString: Untagged
@@ -335,6 +349,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 595447912}
+--- !u!114 &595447917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 595447912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8b0a88c1809fc842a24810dc173b99c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextScene: GameScreen
 --- !u!1 &834283502
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,7 +371,6 @@ GameObject:
   - component: {fileID: 834283506}
   - component: {fileID: 834283505}
   - component: {fileID: 834283504}
-  - component: {fileID: 834283503}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -353,13 +378,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &834283503
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 834283502}
-  m_Enabled: 1
 --- !u!124 &834283504
 Behaviour:
   m_ObjectHideFlags: 0

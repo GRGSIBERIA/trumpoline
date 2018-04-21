@@ -31,7 +31,7 @@ public class Note
 
 public class MIDIManager
 {
-    public float Tempo { get; private set; } = 120f;
+    public float Tempo { get; private set; }
     public List<Note> Events { get; private set; }
 
     public MIDIManager(byte[] midiBytes)
@@ -63,7 +63,7 @@ public class MIDIManager
         return tmp;
     }
 
-    float getTotalSeconds(int totalDelta, int division, float tmp)
+    float GetTotalSeconds(int totalDelta, int division, float tmp)
     {
         return ((float)totalDelta / division) * (60f / tmp);
     }
@@ -85,12 +85,12 @@ public class MIDIManager
                 var totalSeconds = ((float)totalDelta / smf.division) * (60f / tmp);
                 events.Add(new Note(
                     ev.midiEvent.data1,
-                    getTotalSeconds(totalDelta, smf.division, tmp),
+                    GetTotalSeconds(totalDelta, smf.division, tmp),
                     ev.midiEvent.data2));
             }
             else if ((ev.midiEvent.status & 0xf0) == 0x80)  // ノートオフ
             {
-                var totalSec = getTotalSeconds(totalDelta, smf.division, tmp);
+                var totalSec = GetTotalSeconds(totalDelta, smf.division, tmp);
                 events[events.Count - 1].SetEndTime(totalSec);
             }
             totalDelta += ev.delta;

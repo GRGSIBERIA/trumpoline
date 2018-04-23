@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 224912783596230408}
   - component: {fileID: 222166320342779348}
   - component: {fileID: 114334244316895194}
+  - component: {fileID: 114659880675791058}
   m_Layer: 5
   m_Name: Success Image
   m_TagString: Untagged
@@ -55,6 +56,18 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114659880675791058
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1394067308167332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b71858a00cff1b4c98a61546388a532, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DLButton: {fileID: 0}
 --- !u!222 &222166320342779348
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -76,6 +89,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 292.99994, y: -243.8}
+  m_AnchoredPosition: {x: 293, y: -360.69}
   m_SizeDelta: {x: 47.3, y: 47.3}
   m_Pivot: {x: 0.5, y: 0.5}

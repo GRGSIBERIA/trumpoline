@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -30,7 +31,7 @@ public class DownloadButtonScript : MonoBehaviour {
     public void OnClick()
     {
         this.URL = this.inputField.text;
-
+        
         www = new WWW(this.URL);
     }
 }

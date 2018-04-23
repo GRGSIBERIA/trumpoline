@@ -82,7 +82,6 @@ public class MIDIManager
 
             if ((ev.midiEvent.status & 0xf0) == 0x90)   // ノートオン
             {
-                var totalSeconds = ((float)totalDelta / smf.division) * (60f / tmp);
                 events.Add(new Note(
                     ev.midiEvent.data1,
                     GetTotalSeconds(totalDelta, smf.division, tmp),

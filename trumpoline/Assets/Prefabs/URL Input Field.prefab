@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 114083426921504904}
   - component: {fileID: 114756140569463772}
   m_Layer: 5
-  m_Name: MIDI Input Field
+  m_Name: URL Input Field
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

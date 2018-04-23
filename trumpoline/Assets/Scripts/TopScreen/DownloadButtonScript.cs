@@ -9,10 +9,17 @@ public class DownloadButtonScript : MonoBehaviour {
     public string URL { get; private set; }
 
     InputField inputField;
+    WWW www;
     
 	// Use this for initialization
 	void Start () {
         this.inputField = InputFieldObj.GetComponent<InputField>();
+        
+        // これは失敗する気がする
+        if (www != null && www.isDone)
+        {
+
+        }
 	}
 	
 	// Update is called once per frame
@@ -23,5 +30,7 @@ public class DownloadButtonScript : MonoBehaviour {
     public void OnClick()
     {
         this.URL = this.inputField.text;
+
+        www = new WWW(this.URL);
     }
 }

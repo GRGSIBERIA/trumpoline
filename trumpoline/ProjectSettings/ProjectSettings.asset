@@ -639,7 +639,7 @@ PlayerSettings:
   cloudServicesEnabled:
     UNet: 1
   facebookSdkVersion: 7.9.4
-  apiCompatibilityLevel: 2
+  apiCompatibilityLevel: 3
   cloudProjectId: 62ede665-208f-4092-ad0e-40813af8b271
   projectName: trunpoline
   organizationId: grgsiberia

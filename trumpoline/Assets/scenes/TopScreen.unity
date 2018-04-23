@@ -222,6 +222,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0842c1910467e348a7e6b1388e4a7bb, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &219165359 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1945024666418390, guid: a0842c1910467e348a7e6b1388e4a7bb,
+    type: 2}
+  m_PrefabInternal: {fileID: 66665351}
 --- !u!224 &221504520 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224383443689636528, guid: a0842c1910467e348a7e6b1388e4a7bb,
@@ -398,6 +403,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114659880675791058, guid: 77a9ca27d3392cd48892c7acf0fafaa0,
+        type: 2}
+      propertyPath: DLButton
+      value: 
+      objectReference: {fileID: 1069035458}
     - target: {fileID: 1394067308167332, guid: 77a9ca27d3392cd48892c7acf0fafaa0, type: 2}
       propertyPath: m_Name
       value: WAV Success Image
@@ -886,6 +896,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1057150104}
+--- !u!1 &1069035458 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1945024666418390, guid: a0842c1910467e348a7e6b1388e4a7bb,
+    type: 2}
+  m_PrefabInternal: {fileID: 900505258}
 --- !u!1 &1499232350
 GameObject:
   m_ObjectHideFlags: 0
@@ -1340,6 +1355,11 @@ Prefab:
       propertyPath: m_Name
       value: MIDI Success Image
       objectReference: {fileID: 0}
+    - target: {fileID: 114659880675791058, guid: 77a9ca27d3392cd48892c7acf0fafaa0,
+        type: 2}
+      propertyPath: DLButton
+      value: 
+      objectReference: {fileID: 219165359}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 77a9ca27d3392cd48892c7acf0fafaa0, type: 2}
   m_IsPrefabParent: 0

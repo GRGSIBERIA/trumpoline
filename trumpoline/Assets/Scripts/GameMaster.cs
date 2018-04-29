@@ -13,4 +13,11 @@ public class GameMaster : MonoBehaviour {
     {
         this.midiManager = new MIDIManager(this.midiData);
     }
+
+    public void TransfarGameMaster(GameMaster master)
+    {
+        this.clip = master.clip;
+        this.midiManager = master.midiManager;
+        this.midiData = master.midiData;
+    }
 }

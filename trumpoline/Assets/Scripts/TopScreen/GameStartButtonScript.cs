@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class GameStartButtonScript : MonoBehaviour
 {
-    
+    public GameObject masterObj;
+    GameMaster master;
 
     // Use this for initialization
     void Start()
     {
-
+        this.master = masterObj.GetComponent<GameMaster>();
     }
 
     // Update is called once per frame
@@ -21,6 +22,7 @@ public class GameStartButtonScript : MonoBehaviour
 
     public void OnClick()
     {
+        this.master.LoadMIDIManager();
 
         SceneManager.LoadScene("GameScreen");
     }

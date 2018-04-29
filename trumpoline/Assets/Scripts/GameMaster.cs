@@ -19,8 +19,8 @@ public class GameMaster : MonoBehaviour {
 		
 	}
 
-    public void LoadMIDIManager(byte[] midi)
+    public void LoadMIDIManager()
     {
-        this.midiManager = new MIDIManager(midi);
+        this.midiManager = new MIDIManager(this.midiData);
     }
 }

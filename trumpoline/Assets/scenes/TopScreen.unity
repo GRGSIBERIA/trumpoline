@@ -889,7 +889,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: WAV File URL
+  m_Text: Audio File URL
 --- !u!222 &1057150107
 CanvasRenderer:
   m_ObjectHideFlags: 0

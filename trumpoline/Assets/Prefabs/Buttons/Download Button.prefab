@@ -144,7 +144,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InputFieldObj: {fileID: 0}
-  AudioType: 1
+  GameMasterObj: {fileID: 0}
+  AudioType: 0
 --- !u!114 &114721889009119098
 MonoBehaviour:
   m_ObjectHideFlags: 1

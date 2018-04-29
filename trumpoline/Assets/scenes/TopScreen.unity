@@ -215,6 +215,11 @@ Prefab:
       propertyPath: InputFieldObj
       value: 
       objectReference: {fileID: 1518799546}
+    - target: {fileID: 114344489093573050, guid: a0842c1910467e348a7e6b1388e4a7bb,
+        type: 2}
+      propertyPath: GameMasterObj
+      value: 
+      objectReference: {fileID: 1002351854}
     - target: {fileID: 1945024666418390, guid: a0842c1910467e348a7e6b1388e4a7bb, type: 2}
       propertyPath: m_Name
       value: MIDI Download Button
@@ -564,6 +569,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114867943770096424, guid: f2777a8374db5ed499e333f2c29c7ef7,
+        type: 2}
+      propertyPath: masterObj
+      value: 
+      objectReference: {fileID: 1002351854}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f2777a8374db5ed499e333f2c29c7ef7, type: 2}
   m_IsPrefabParent: 0
@@ -852,6 +862,11 @@ Prefab:
       propertyPath: InputFieldObj
       value: 
       objectReference: {fileID: 816138822}
+    - target: {fileID: 114344489093573050, guid: a0842c1910467e348a7e6b1388e4a7bb,
+        type: 2}
+      propertyPath: GameMasterObj
+      value: 
+      objectReference: {fileID: 1002351854}
     - target: {fileID: 1945024666418390, guid: a0842c1910467e348a7e6b1388e4a7bb, type: 2}
       propertyPath: m_Name
       value: WAV Download Button
@@ -864,6 +879,11 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224383443689636528, guid: a0842c1910467e348a7e6b1388e4a7bb,
     type: 2}
   m_PrefabInternal: {fileID: 900505258}
+--- !u!1 &1002351854 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1633664662009688, guid: c16ed4cb6f2c5af49a3d651e39276ef3,
+    type: 2}
+  m_PrefabInternal: {fileID: 299193397}
 --- !u!1 &1057150104
 GameObject:
   m_ObjectHideFlags: 0

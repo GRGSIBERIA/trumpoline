@@ -70,6 +70,7 @@ public class MIDIManager
 
     List<Note> LoadEvents(MidiFileContainer smf, float tmp)
     {
+        Debug.Log("tracks:" + smf.tracks.Count.ToString());
         var track = smf.tracks[1];
         var events = new List<Note>();
         var totalDelta = 0;

@@ -224,6 +224,11 @@ Prefab:
       propertyPath: m_Name
       value: MIDI Download Button
       objectReference: {fileID: 0}
+    - target: {fileID: 114344489093573050, guid: a0842c1910467e348a7e6b1388e4a7bb,
+        type: 2}
+      propertyPath: AudioType
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0842c1910467e348a7e6b1388e4a7bb, type: 2}
   m_IsPrefabParent: 0
@@ -673,6 +678,11 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114513920846568008, guid: 1db31dd345e57494e86751b17dd54122,
+        type: 2}
+      propertyPath: m_Text
+      value: http://www.grgsiberia.net.s3-ap-nor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1db31dd345e57494e86751b17dd54122, type: 2}
@@ -1137,6 +1147,11 @@ Prefab:
     - target: {fileID: 1599488187607668, guid: 6305b2fa3f8144f4f992cbee809e2afe, type: 2}
       propertyPath: m_Name
       value: MIDI Input Field
+      objectReference: {fileID: 0}
+    - target: {fileID: 114566503124999272, guid: 6305b2fa3f8144f4f992cbee809e2afe,
+        type: 2}
+      propertyPath: m_Text
+      value: http://www.grgsiberia.net.s3-ap-nor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6305b2fa3f8144f4f992cbee809e2afe, type: 2}

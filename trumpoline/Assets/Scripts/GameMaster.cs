@@ -16,8 +16,8 @@ public class GameMaster : MonoBehaviour {
 
     public void TransfarGameMaster(GameMaster master)
     {
-        this.clip = master.clip;
-        this.midiManager = master.midiManager;
-        this.midiData = master.midiData;
+        master.clip = this.clip;
+        master.midiData = this.midiData;
+        master.midiManager = this.midiManager;
     }
 }

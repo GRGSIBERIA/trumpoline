@@ -12,8 +12,8 @@ public enum FileType
 
 public class DontMidiException : System.Exception { }
 
-[RequireComponent(typeof(InputField))]
-[RequireComponent(typeof(GameMaster))]
+
+
 public class DownloadButtonScript : MonoBehaviour {
 
     public GameObject InputFieldObj;

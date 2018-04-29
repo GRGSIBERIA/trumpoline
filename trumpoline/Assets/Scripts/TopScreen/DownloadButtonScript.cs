@@ -10,40 +10,28 @@ public enum FileType
     WAV
 }
 
+[RequireComponent(typeof(InputField))]
+[RequireComponent(typeof(GameMaster))]
 public class DownloadButtonScript : MonoBehaviour {
 
     public GameObject InputFieldObj;
+    public GameObject GameMasterObj;
     public string URL { get; private set; }
     public bool downloadEnded { get; private set; }
 
-    public AudioClip clip;
-    public byte[] midi;
+    AudioClip clip;
+    byte[] midi;
 
-    public FileType AudioType { get; private set; }
+    public FileType AudioType; 
 
     InputField inputField;
+    GameMaster master;
     WWW www;
-
-    void Awake()
-    {
-        if (this.name.IndexOf("WAV") >= 0)
-        {
-            this.AudioType = FileType.WAV;
-        }
-        else if (this.name.IndexOf("MIDI") >= 0)
-        {
-            this.AudioType = FileType.MIDI;
-        }
-        else
-        {
-            throw new System.Exception("Do not match names: MIDI or WAV");
-        }
-    }
-
-
+    
 	// Use this for initialization
 	void Start () {
         this.inputField = InputFieldObj.GetComponent<InputField>();
+        this.master = GameMasterObj.GetComponent<GameMaster>();
     }
 	
 	// Update is called once per frame
@@ -58,6 +46,10 @@ public class DownloadButtonScript : MonoBehaviour {
 
     // MIDIやWAVのバリデーションをしたい
 
+    void ValidatesMIDI(bytes[] midi)
+    {
+
+    }
 
     public void OnClick()
     {
@@ -73,10 +65,13 @@ public class DownloadButtonScript : MonoBehaviour {
         {
             case FileType.MIDI:
                 this.midi = this.www.bytes;
+                this.master.midiData = this.midi;
                 Debug.Log(this.midi.Length);
                 break;
             case FileType.WAV:
                 this.clip = this.www.GetAudioClip(false, true);
+                this.master.clip = this.clip;
+                Debug.Log(this.clip.length);
                 break;
         }
     }

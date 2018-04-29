@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameMaster : MonoBehaviour {
 
-    public AudioClip audioFile;
+    public AudioClip clip;
     public byte[] midiData;
 
     MIDIManager midiManager;

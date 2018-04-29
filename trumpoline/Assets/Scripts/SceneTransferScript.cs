@@ -11,4 +11,5 @@ public class SceneTransferScript : MonoBehaviour {
     {
         this.onAwake.Invoke();
     }
+
 }

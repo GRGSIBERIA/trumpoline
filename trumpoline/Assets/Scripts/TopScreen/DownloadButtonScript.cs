@@ -10,6 +10,8 @@ public enum FileType
     WAV
 }
 
+public class DontMidiException : System.Exception { }
+
 [RequireComponent(typeof(InputField))]
 [RequireComponent(typeof(GameMaster))]
 public class DownloadButtonScript : MonoBehaviour {
@@ -44,11 +46,15 @@ public class DownloadButtonScript : MonoBehaviour {
         yield return new WaitWhile(() => this.www.isDone);
     }
 
-    // MIDIやWAVのバリデーションをしたい
-
-    void ValidatesMIDI(bytes[] midi)
+    // MThdを検証する
+    void ValidatesMIDI(byte[] midi)
     {
-
+        byte[] magic = { 0x4D, 0x54, 0x68, 0x64 };
+        for (var i = 0; i < magic.Length; ++i)
+        {
+            if (magic[i] != midi[i])
+                throw new DontMidiException();
+        }
     }
 
     public void OnClick()
@@ -65,6 +71,7 @@ public class DownloadButtonScript : MonoBehaviour {
         {
             case FileType.MIDI:
                 this.midi = this.www.bytes;
+                ValidatesMIDI(midi);
                 this.master.midiData = this.midi;
                 Debug.Log(this.midi.Length);
                 break;

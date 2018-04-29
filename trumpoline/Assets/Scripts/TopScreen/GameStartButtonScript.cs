@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameStartButtonScript : MonoBehaviour
 {
+    
+
     // Use this for initialization
     void Start()
     {
@@ -19,6 +21,7 @@ public class GameStartButtonScript : MonoBehaviour
 
     public void OnClick()
     {
+
         SceneManager.LoadScene("GameScreen");
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameMaster : ScriptableObject {
+public class GameMaster : MonoBehaviour {
 
     public AudioClip clip;
     public byte[] midiData;

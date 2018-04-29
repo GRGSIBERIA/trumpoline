@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class GameMaster : MonoBehaviour {
 
-    public GameObject MIDIDL;
-    public GameObject WAVDL;
+    public AudioClip audioFile;
+    public byte[] midiData;
+
+    MIDIManager midiManager;
 
 	// Use this for initialization
 	void Start () {
